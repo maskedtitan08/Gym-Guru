@@ -1,0 +1,246 @@
+.exercise-detail-container {
+    margin-top: 96px;
+  }
+  
+  @media (max-width: 1024px) {
+    .exercise-detail-container {
+      margin-top: 60px;
+    }
+  }
+  
+
+
+
+  
+  .detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 60px;
+  }
+  
+  .detail-container img {
+    max-width: 100%;
+  }
+  
+  @media (min-width: 1024px) {
+    .detail-container {
+      flex-direction: row;
+    }
+  }
+  
+  .detail-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .detail-title {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  
+  .detail-description {
+    font-size: 18px;
+    color: #4F4C4C;
+  }
+  
+  .extra-detail {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .extra-detail-icon {
+    background: #FFF2DB;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .extra-detail-icon img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .extra-detail-name {
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+  
+  .instructions-container {
+    width: 100%;
+    padding: 20px;
+    border-top: solid #e0e0e0;
+  }
+  
+  .instructions-title {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+
+  }
+  
+  .detail-instructions {
+    background-color: #ffffff;
+    padding: 15px;
+    border-left: 4px solid #ff2625;
+    border-bottom: 2px solid #ff2625;
+    margin-bottom: 10px;
+  }
+  
+  .detail-instructions p {
+    margin: 0;
+    font-size: 18px;
+    color: #343232;
+    font-weight: 600;
+
+  }
+  
+  @media (min-width: 1024px) {
+    .detail-title {
+      font-size: 64px;
+    }
+  
+    .detail-description {
+      font-size: 24px;
+    }
+  
+    .extra-detail-name {
+      font-size: 30px;
+    }
+  
+    .instructions-title {
+      font-size: 30px;
+    }
+  
+    .detail-instructions p {
+      font-size: 18px;
+    }
+  }
+  
+  
+
+
+  .exercise-videos-container {
+    margin-top: 203px;
+    padding: 20px;
+  }
+  
+  .exercise-videos-title {
+    font-size: 44px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 33px;
+  }
+  
+  .highlight {
+    color: #FF2625;
+    text-transform: capitalize;
+  }
+  
+  .exercise-videos-list {
+    display: flex;
+    flex-direction: row;
+    gap: 110px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .exercise-video {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .exercise-video-thumbnail {
+    border-top-left-radius: 20px;
+    width: 100%;
+  }
+  
+  .exercise-video-info {
+    margin-top: 10px;
+  }
+  
+  .exercise-video-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .exercise-video-channel {
+    font-size: 14px;
+    color: #000;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .exercise-videos-container {
+      margin-top: 20px;
+    }
+  
+    .exercise-videos-title {
+      font-size: 25px;
+    }
+  
+    .exercise-videos-list {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .exercise-video-title {
+      font-size: 18px;
+    }
+  }
+
+
+
+  .similar-exercises-container {
+    margin-top: 100px;
+    padding: 20px;
+  }
+  
+  .similar-exercises-title {
+    font-size: 44px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 33px;
+    margin-left: 20px;
+  }
+  
+  .highlight {
+    color: #FF2625;
+    text-transform: capitalize;
+  }
+  
+  .similar-exercises-list {
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .similar-exercises-container {
+      margin-top: 0px;
+    }
+  
+    .similar-exercises-title {
+      font-size: 25px;
+    }
+  
+    .similar-exercises-list {
+      padding: 10px;
+    }
+  
+    .similar-exercises-title {
+      margin-top: 60px;
+    }
+  }
+  
+  
