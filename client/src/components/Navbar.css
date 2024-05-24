@@ -19,7 +19,7 @@
 .logo-text {
   text-decoration:solid;
   font-weight:bolder;
-  color:#FF2625 ;
+  color:#a10b1a ;
   font-size:21px;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .home-link {
-  border-bottom: 3px solid #FF2625;
+  border-bottom: 3px solid #a10b1a;
 }
 
 /* Responsive styles */

@@ -90,8 +90,8 @@
   .detail-instructions {
     background-color: #ffffff;
     padding: 15px;
-    border-left: 4px solid #ff2625;
-    border-bottom: 2px solid #ff2625;
+    border-left: 4px solid #a10b1a;
+    border-bottom: 2px solid #a10b1a;
     margin-bottom: 10px;
   }
   
@@ -141,7 +141,7 @@
   }
   
   .highlight {
-    color: #FF2625;
+    color: #a10b1a;
     text-transform: capitalize;
   }
   
@@ -215,7 +215,7 @@
   }
   
   .highlight {
-    color: #FF2625;
+    color: #a10b1a;
     text-transform: capitalize;
   }
   

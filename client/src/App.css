@@ -23,7 +23,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #FF2625;
+  color: #a10b1a;
   font-size: 25px;
   border-radius: 4px;
   position: absolute;
@@ -67,7 +67,7 @@ body {
   width: 400px;
   height: 445px;
   background: #fff;
-  border-top: 4px solid #FF2625;
+  border-top: 4px solid #a10b1a;
   border-bottom-left-radius: 20px;
   text-decoration: none;
   display: flex;
@@ -98,8 +98,8 @@ body {
 }
 
 .search-btn:hover {
-  color: #FF2625 !important;
-  border: 1px solid #FF2625 !important;
+  color: #a10b1a !important;
+  border: 1px solid #a10b1a !important;
 }
 
 .exercise-video {
@@ -165,7 +165,7 @@ body {
   align-items: center;
   width: 100%;
 }
-
+/* 
 .footer-container{
   margin-top: 80px;
   background-color: #fff3f4;
@@ -174,7 +174,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-top: 1px solid #FF2625;
+  border-top: 1px solid #a10b1a;
 }
 
 .footer-logo{
@@ -193,8 +193,8 @@ body {
 }
 
 .footer-logo h2{
-  color: #FF2625;
-  border-bottom: 3px solid #FF2625;
+  color: #a10b1a;
+  border-bottom: 3px solid #a10b1a;
 }
 
 .footer-container h3{
@@ -210,10 +210,6 @@ body {
   }
 }
 
-/* .social-links p{
-  font-size: 1.5rem;
-  margin-top: 30px;
-} */
 
 .social-links {
   display: flex;
@@ -235,12 +231,102 @@ body {
 }
 
 .social-links a:hover {
-  color: #FF2625;
+  color: #a10b1a;
 }
 
 @media (max-width: 768px) {
   .social-links {
     flex-direction: row;
+  }
+
+  .social-links a {
+    font-size: 1.5rem;
+    margin: 0 5px;
+  }
+} */
+
+.footer-container {
+  margin-top: 80px;
+  background-color: #fff3f4;
+  text-align: center;
+  padding: 24px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid #a10b1a;
+}
+
+.footer-logo {
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 24px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: 40px;
+}
+
+.footer-logo h2 {
+  color: #a10b1a;
+  border-bottom: 3px solid #a10b1a;
+}
+
+.footer-container h3 {
+  margin-top: 40px;
+  font-size: 0.9cm;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+
+  .footer-container h3 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-links p {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.social-links a {
+  color: #333;
+  font-size: 2rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #a10b1a;
+}
+
+@media (max-width: 768px) {
+  .social-links {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
   }
 
   .social-links a {

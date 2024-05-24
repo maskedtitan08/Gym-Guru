@@ -33,7 +33,7 @@
 }
 
 .hero-banner-title {
-  color: #FF2625;
+  color: #a10b1a;
   font-weight: 600;
   font-size: 26px;
 }
@@ -65,7 +65,9 @@
   text-decoration: none;
   width: 200px;
   text-align: center;
-  background: #FF2625;
+  /* background: #ff2625; */
+  background: #a10b1a;
+
   padding: 14px;
   font-size: 22px;
   text-transform: none;
@@ -75,7 +77,7 @@
 
 .hero-banner-bg-text {
   font-weight: 600;
-  color: #FF2625;
+  color: #a10b1a;
   opacity: 0.1;
   font-size: 200px;
   display: block;
@@ -151,7 +153,7 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #FF2625;
+  background-color: #a10b1a;
   color: #fff;
   text-transform: none;
   width: 173px;
@@ -205,7 +207,7 @@
 }
 
 .bodyPart-card.active {
-  border-top: 4px solid #FF2625;
+  border-top: 4px solid #a10b1a;
 }
 
 .icon {
@@ -265,7 +267,7 @@
 }
 
 .pagination-button.active {
-  background-color: #ff2625;
+  background-color: #a10b1a;
   color: white;
 }
 
