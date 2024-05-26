@@ -1,0 +1,74 @@
+.BMI-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    margin: 30px auto;
+}
+
+.BMI-header {
+    font-size: 34px;
+    color: #a10b1a;
+}
+
+.BMI-container form {
+    text-align: center;
+    margin: 10px;
+    gap: 20px;
+}
+
+button {
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: larger;
+    background-color: #e06e79;
+}
+
+.BMI-container form label {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 26px;
+    max-width: 600px;
+    width: 100%;
+
+}
+
+.BMI-container form label input {
+    width: 100%; /* Full width input */
+    max-width: 800px; /* Max width for larger screens */
+    height: 50px;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 10px;
+}
+.BMI-output{
+    display:flex;
+    flex-direction: column;
+}
+.BMI-output label {
+    font-size: 34px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .BMI-header {
+        font-size: 28px; /* Decrease font size for smaller screens */
+    }
+    
+    .BMI-container form label {
+        font-size: 20px; /* Decrease font size for smaller screens */
+    }
+    
+    .BMI-container form label input {
+        font-size: 1.2rem; /* Decrease font size for smaller screens */
+    }
+    
+    .BMI-output label {
+        font-size: 28px; /* Decrease font size for smaller screens */
+    }
+}

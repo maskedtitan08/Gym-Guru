@@ -1,0 +1,223 @@
+   .nutrients-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    margin: 30px auto;
+  }
+  
+  .nutrients-container h1 {
+    font-size: 38px;
+    color: #a10b1a;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+  }
+  
+  .nutrients-container form {
+    text-align: center;
+    margin: 10px;
+    gap: 20px;
+    width: 600px;
+    align-items: center;
+  }
+  .input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    max-width: 600px;
+    width: 100%;
+  }
+  .height-input{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+  .height-input input {
+    width: 100%;
+    max-width: 300px;
+    height: 48px;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #a10b1a;
+  }
+  
+  
+  .nutrients-container form div label {
+    font-size: 26px;
+    text-align: center;
+  }
+  
+  .input input, select {
+    width: 100%;
+    max-width: 600px;
+    height: 48px;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid #a10b1a;
+  }
+
+  
+  button {
+    height: auto;
+    width: auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: larger;
+    background-color: #e06e79;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+  
+  .caloric-need p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 26px;
+  }
+  
+  .caloric-need strong {
+    color: #a10b1a;
+  }
+  
+  .macro-table {
+    margin-top: 20px;
+    width: 800px;
+  }
+  
+  .macro-table h2 {
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+  
+  .macro-table table {
+    width: 100%;
+    height: 600px;
+    border-collapse: collapse;
+    border: 2px solid #a10b1a;
+  }
+  
+  .macro-table th, .macro-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 2px solid #a10b1a;
+    border-right: 2px solid #a10b1a;
+    font-size: 21px;
+  }
+  
+  .left-item {
+    font-weight: 600;
+  }
+  
+  .macro-table th {
+    background-color: #e0a7ad;
+    border-right: 2px solid #a10b1a;
+    font-size: 24px;
+  }
+  
+  .macro-table tbody tr:nth-child(even) {
+    background-color: #f7d4d4;
+  }
+  
+  
+  @media (max-width: 1200px) {
+    .nutrients-container form, .nutrients-container form div {
+      width: 80%;
+    }
+  
+    .macro-table {
+      width: 90%;
+    }
+  
+    .macro-table table {
+      height: auto;
+    }
+  
+    input, select {
+      width: 100%;
+    }
+
+    .height-input{
+      width: 100%;
+    }
+  
+    .macro-table th, .macro-table td {
+      font-size: 18px;
+    }
+  
+    button {
+      width: auto;
+      font-size: medium;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nutrients-container h1 {
+      font-size: 32px;
+    }
+  
+    .nutrients-container form, .nutrients-container form div {
+      width: 90%;
+    }
+  
+    .nutrients-container form div label {
+      font-size: 22px;
+    }
+  
+    input, select {
+      height: 45px;
+      font-size: 1.2rem;
+    }
+    
+  
+    h2 {
+      font-size: 30px;
+    }
+  
+    .caloric-need p {
+      font-size: 24px;
+    }
+  
+    .macro-table th, .macro-table td {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nutrients-container h1 {
+      font-size: 28px;
+    }
+  
+    .nutrients-container form, .nutrients-container form div {
+      width: 100%;
+    }
+  
+    .nutrients-container form div label {
+      font-size: 18px;
+    }
+  
+    input, select {
+      height: 40px;
+      font-size: 1rem;
+    }
+  
+    h2 {
+      font-size: 26px;
+    }
+  
+    .caloric-need p {
+      font-size: 20px;
+    }
+  
+    .macro-table th, .macro-table td {
+      font-size: 14px;
+    }
+  }
+  

@@ -1,6 +1,6 @@
 import React from 'react';
-import HeroBannerImage from '../assets/images/banner.png';
-// import HeroBannerImage from '../assets/images/b1.jpg';
+// import HeroBannerImage from '../assets/images/banner.png';
+import HeroBannerImage from '../assets/images/b1.webp';
 
 import "./Home.css"
 

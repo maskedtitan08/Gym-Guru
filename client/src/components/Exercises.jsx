@@ -28,7 +28,6 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   // Pagination
   const indexOfLastExercise = currentPage * exercisesPerPage;
   const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
-  // const currentExercises = exercises.slice(indexOfFirstExercise, indexOfLastExercise);
   const currentExercises = exercises && exercises.length > 0 
     ? exercises.slice(indexOfFirstExercise, indexOfLastExercise)
     : [];

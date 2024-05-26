@@ -9,12 +9,10 @@ export const fetchData = async (url, options) => {
 //     try {
 //       const response = await fetch(url, options);
       
-//       // If response is not OK, throw an error
 //       if (!response.ok) {
 //         if (response.status === 429 && retries > 0) {
-//           // If rate limited, wait for the delay and retry
 //           await new Promise(resolve => setTimeout(resolve, delay));
-//           return fetchData(url, options, retries - 1, delay * 2); // Double the delay for next attempt
+//           return fetchData(url, options, retries - 1, delay * 2); 
 //         }
 //         throw new Error(`HTTP error! status: ${response.status}`);
 //       }
@@ -41,12 +39,16 @@ export const exerciseOptions = {
 
 export const youtubeOptions = {
     method: 'GET',
-    // params: {
-    //     id: 'UCE_M8A5yxnLfW0KghEeajjw'
-    // },
     headers: {
         'X-RapidAPI-Key': import.meta.env.VITE_RAPID_API_KEY,
         'X-RapidAPI-Host': 'youtube-search-and-download.p.rapidapi.com'
     }
+}
 
+export const nutrientOptions= {
+    method: 'GET',
+	headers: {
+		'x-rapidapi-key': import.meta.env.VITE_RAPID_API_KEY,
+		'x-rapidapi-host': 'nutrition-calculator.p.rapidapi.com'
+	}
 }

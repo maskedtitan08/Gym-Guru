@@ -1,4 +1,4 @@
-.navbar-container {
+ .navbar-container {
   display: flex;
   flex-direction: row;
   justify-content: none;
@@ -36,13 +36,14 @@
 .navbar-link {
   text-decoration: none;
   color: #3A1212;
+  transition: transform 0.3s ease-in-out;
 }
 
-.home-link {
-  border-bottom: 3px solid #a10b1a;
+.navbar-link:hover{
+  transform: scale(1.2);
+  color: #a10b1a;
 }
 
-/* Responsive styles */
 @media (min-width: 600px) {
   .navbar-container {
     gap: 123px;
@@ -55,4 +56,5 @@
     gap: 40px;
     margin-top: 20px;
   }
-}
+} 
+

@@ -12,9 +12,12 @@ const Navbar = () => (
     </Link>
     <div className="navbar-links">
       <Link to="/" className="navbar-link home-link">Home</Link>
-      <a href="#exercises" className="navbar-link">Exercises</a>
+      <Link to="/bmi" className="navbar-link bmi-link">BMI</Link>
+      <Link to="/nutrient" className="navbar-link nutrient-link">Nutrient Info</Link>
+      <a href="#exercises" className="navbar-link ">Exercises</a>
     </div>
   </div>
 );
 
 export default Navbar;
+
