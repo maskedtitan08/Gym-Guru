@@ -59,22 +59,6 @@ const BMICalculator = () => {
             <div className="BMI-header">
                 <h2>BMI Calculator</h2>
             </div>
-            {/* <form onSubmit={submitMe}>
-                <label>
-                    Please enter your name :
-                    <input type="text" name="name" value={name} onChange={change} required />
-                </label>
-                <label>
-                    Enter your height in cm :
-                    <input type="number" name="height" value={height} onChange={heightchange} required />
-                </label>
-                <label>
-                    Enter your weight in kg :
-                    <input type="number" name="weight" value={weight} onChange={weightchange} required />
-                </label>
-                <button onClick={() => calculateBMI}>Submit</button>
-            </form> */}
-
             {bmi > -1 ? (<div className="BMI-output">
                 <label>Hello <span style={{ color: "#a10b1a", fontWeight: "500" }}>{name.toUpperCase()}</span></label>
                 <label>Your BMI is <span style={{

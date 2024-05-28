@@ -11,7 +11,9 @@ const NutrientInfo = () => {
     age: 0,
     feet: 0,
     inches: 0,
-    weight: 0,
+    lbs: 0,
+    height: 0,
+    kilos: 0,
     activityLevel: 'Active',
   });
   const [nutrientData, setNutrientData] = useState(null);
@@ -24,7 +26,9 @@ const NutrientInfo = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(formData);
-    const url = `https://nutrition-calculator.p.rapidapi.com/api/nutrition-info?measurement_units=std&sex=${formData.gender}&age_value=${formData.age}&age_type=yrs&feet=${formData.feet}&inches=${formData.inches}&lbs=${formData.weight}&activity_level=${formData.activityLevel}`;
+    // const url = `https://nutrition-calculator.p.rapidapi.com/api/nutrition-info?measurement_units=std&sex=${formData.gender}&age_value=${formData.age}&age_type=yrs&feet=${formData.feet}&inches=${formData.inches}&lbs=${formData.lbs}&activity_level=${formData.activityLevel}`;
+    const url = `https://nutrition-calculator.p.rapidapi.com/api/nutrition-info?measurement_units=met&sex=${formData.gender}&age_value=${formData.age}&age_type=yrs&cm=${formData.height}&kilos=${formData.kilos}&activity_level=${formData.activityLevel}`;
+
 
     const nutrientsData = await fetchData(url, nutrientOptions);
 
@@ -79,17 +83,25 @@ const NutrientInfo = () => {
             <label>Age:</label>
             <input type="number" name="age" value={formData.age} onChange={handleChange} required/>
           </div>
-          <div>
+          {/* <div>
             <label>Height:</label>
             <div className="height-input">
               <input type="number" name="feet" value={formData.feet} onChange={handleChange} placeholder="Feet" required/>
               <input type="number" name="inches" value={formData.inches} onChange={handleChange} placeholder="Inches" required/>
             </div>
+          </div> */}
+          <div className='input'>
+            <label>Height (cm):</label>
+              <input type="number" name="height" value={formData.height} onChange={handleChange} placeholder="height" required/>
           </div>
           <div className='input'>
-            <label>Weight (lbs):</label>
-            <input type="number" name="weight" value={formData.weight} onChange={handleChange} required/>
+            <label>Weight (kilos):</label>
+            <input type="number" name="kilos" value={formData.kilos} onChange={handleChange} required/>
           </div>
+          {/* <div className='input'>
+            <label>Weight (lbs):</label>
+            <input type="number" name="lbs" value={formData.lbs} onChange={handleChange} required/>
+          </div> */}
           <div className='input'>
             <label>Activity Level:</label>
             <select name="activityLevel" value={formData.activityLevel} onChange={handleChange} required>
