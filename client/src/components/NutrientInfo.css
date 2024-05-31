@@ -59,7 +59,7 @@
     font-size: 1.4rem;
     text-align: center;
     margin-top: 10px;
-    border: 1px solid #a10b1a;
+    border: 2px solid #1b1011;
   }
 
   
@@ -70,7 +70,15 @@
     border-radius: 5px;
     font-size: larger;
     background-color: #e06e79;
+    transition: background-color 0.3s ease, color 0.3s ease,transform 0.15s ease;
   }
+
+  button:hover {
+    background-color: #c55d67; 
+    transform: scale(1.2);
+  }
+
+  
   
   h2 {
     text-align: center;

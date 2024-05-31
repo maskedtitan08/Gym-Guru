@@ -25,14 +25,14 @@ const NutrientInfo = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
+    // console.log(formData);
     // const url = `https://nutrition-calculator.p.rapidapi.com/api/nutrition-info?measurement_units=std&sex=${formData.gender}&age_value=${formData.age}&age_type=yrs&feet=${formData.feet}&inches=${formData.inches}&lbs=${formData.lbs}&activity_level=${formData.activityLevel}`;
     const url = `https://nutrition-calculator.p.rapidapi.com/api/nutrition-info?measurement_units=met&sex=${formData.gender}&age_value=${formData.age}&age_type=yrs&cm=${formData.height}&kilos=${formData.kilos}&activity_level=${formData.activityLevel}`;
 
 
     const nutrientsData = await fetchData(url, nutrientOptions);
 
-    console.log(nutrientsData);
+    // console.log(nutrientsData);
     setNutrientData(nutrientsData);
   };
 

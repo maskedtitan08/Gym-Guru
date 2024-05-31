@@ -19,7 +19,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
   const handleSearch = async () => {
     if (search) {
       const exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions);
-      console.log(exercisesData);
+      // console.log(exercisesData);
 
       const searchedExercises = exercisesData.filter(
         // searching in data and checking all conditions whether the item asked by user 

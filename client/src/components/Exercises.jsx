@@ -38,7 +38,8 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   };
 
   const getVisiblePages = (totalPages, currentPage) => {
-    const visiblePages = 10;
+    // const visiblePages = 10;
+    const visiblePages = 5;
     let start = Math.max(1, currentPage - Math.floor(visiblePages / 2));
     let end = start + visiblePages - 1;
 
